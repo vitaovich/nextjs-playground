@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { IP } from "./(server-action)/clientinfo";
 
 export default function Home() {
   return (
@@ -20,7 +21,8 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>Save and see your changes instantly.</li>
+          <li className="mb-2">Save and see your changes instantly.</li>
+          <li>IP from headers in nextjs: [<IP />]</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
