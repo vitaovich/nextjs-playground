@@ -1,0 +1,24 @@
+version: '1'
+services:
+  # my-utils-api:
+  #   build:
+  #     context: .devcontainer/api
+  #     dockerfile: Dockerfile
+  #   volumes:
+  #     - .:/workspace:cached
+  #   command: sleep infinity
+  #   networks:
+  #     - mynetwork
+
+  my-nextjs-playground:
+    build:
+      context: .devcontainer
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workspace:cached
+    command: sleep infinity
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
